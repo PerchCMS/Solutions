@@ -1,3 +1,10 @@
+Created by: Drew McLellan
+Created date: 2014-03-11
+Last updated: 2014-03-11
+Authors: Drew McLellan
+Title: How do I create a multi-lingual website?
+Tags: multilingual
+
 # How do I Create a Multi-lingual Website?
 
 ## This solution outlines your options for creating a site in more than one language using Perch.

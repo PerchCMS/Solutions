@@ -1,3 +1,10 @@
+Created by: Drew McLellan
+Created date: 2014-03-11
+Last updated: 2014-03-11
+Authors: Drew McLellan
+Title: How do I add an RSS feed to a news page?
+Tags: rss, xml
+
 # How do I add an RSS feed to a news page?
 
 ## In this article we’ll look at how to use the power of perch_content_custom() and templates to create a simple RSS feed for content stored in a standard multiple item region in Perch.
@@ -68,10 +75,10 @@ Obviously, you’ll also want to update the http://example.com/news.php to be th
 
 So we have our RSS page, and we have a template to display the items. We just need to put the two together. The items appear after the <description> tags in an RSS feed.
 
-<?php include('perch/runtime.php'); ?>
-<?php echo '<'.'?xml version="1.0"?'.'>'; ?>
-<rss version="2.0">
-    <channel>
+    <?php include('perch/runtime.php'); ?>
+    <?php echo '<'.'?xml version="1.0"?'.'>'; ?>
+    <rss version="2.0">
+      <channel>
         <title>Example Co News</title>
         <link>http://example.com/news.php</link>
         <description>News and information about Example Co</description>
@@ -82,8 +89,8 @@ So we have our RSS page, and we have a template to display the items. We just ne
                 );
             perch_content_custom('News', $opts);
         ?>
-    </channel>
-</rss>
+      </channel>
+    </rss>
 
 We set the options for perch_content_custom() to take the content from the page our news is on, and tell it to use the template we created for the RSS items. We then use the same region name that our news page uses.
 
@@ -91,6 +98,6 @@ We set the options for perch_content_custom() to take the content from the page 
 
 RSS feeds are included using a <link> tag in the <head> of a page. This is how you get the feed to show up as an RSS icon in the browser’s location bar. Add the following to the <head> section of your news page:
 
-<link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.php" />
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.php" />
 
 And that’s it – we’re done.
