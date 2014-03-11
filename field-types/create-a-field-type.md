@@ -1,4 +1,11 @@
-# How do I create a field type?
+Created by: Rachel Andrew
+Created date: 2014-03-11
+Last updated: 2014-03-11
+Authors: Rachel Andrew
+Title: How do I create a Field Type
+Tags: field types, templates
+
+# How do I create a Field Type?
 
 ## In Perch, every content template tag has a type attribute. This specifies which type of field is used to collect and process the data. In this solution we explain how to start creating your own.
 
