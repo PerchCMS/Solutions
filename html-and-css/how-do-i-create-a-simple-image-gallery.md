@@ -27,7 +27,7 @@ Each item in the region will be a list item containing a thumbnail image which l
       <a href="">
         <img src="" alt="" />
       </a>
-  </li>
+    </li>
 
 The src of the image needs to be an image file, so we’ll add that first.
 
