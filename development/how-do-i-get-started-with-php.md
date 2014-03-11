@@ -78,7 +78,7 @@ The below array is the options array that you might pass into `perch_content_cus
     );
     ?>
 
-The variable that contains the array is called $opts we then create an array, but instead of having a comma separated list of things, we have `name => value` pairs.
+The variable that contains the array is called `$opts` we then create an array, but instead of having a comma separated list of things, we have `name => value` pairs.
 
 Each pair has the name first, then the `=>`, then the value. Each line except the last has a comma. It’s just a comma separated list except containing names and values.
 
