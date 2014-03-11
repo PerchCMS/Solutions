@@ -1,3 +1,10 @@
+Created by: Rachel Andrew
+Created date: 2012-05-31
+Last updated: 2014-03-11
+Authors: Rachel Andrew, Drew McLellan
+Title: How can I install a server to run Perch on my computer?
+Tags: XAMPP, local development, PHP
+
 # How can I install a server to run Perch on my computer?
 
 ## This solution shows you how to get set up to develop locally using XAMPP, a package that installs Apache, PHP and MySQL to create a testing server on your computer.

@@ -1,3 +1,10 @@
+Created by: Rachel Andrew
+Created date: 2012-05-31
+Last updated: 2014-03-11
+Authors: Rachel Andrew
+Title: How do I move a Perch site?
+Tags: XAMPP, local development, PHP
+
 # How do I move a Perch site?
 
 ## If you need to move a site from development to live or from one live server to another, follow these steps.

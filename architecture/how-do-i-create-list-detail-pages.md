@@ -1,3 +1,10 @@
+Created by: Drew McLellan
+Created date: 2012-05-31
+Last updated: 2014-03-11
+Authors: Drew McLellan, Rachel Andrew
+Title: How do I create list and detail pages in Perch?
+Tags: multiple item region, perch_content_custom
+
 # How do I create list and detail pages in Perch?
 
 ## A common pattern in many websites is the idea of list-and-detail pages. One view shows a list of items, and clicking through shows more detail about the chosen item. This can be accomplished with Perch using a multiple-item content region.
