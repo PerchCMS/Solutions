@@ -46,9 +46,9 @@ After adding your items refresh the FAQ page on your site to view the content.
 
 ## Adding a list of links to individual FAQ items
 
-The above process might be all you need for your FAQ page, however on a long page you might like to have a list of the questions at the top of the page and use an anchor to jump to individual answers. You achieve this in Perch by using the perch_content_custom tag.
+The above process might be all you need for your FAQ page, however on a long page you might like to have a list of the questions at the top of the page and use an anchor to jump to individual answers. You achieve this in Perch by using the `perch_content_custom()` function.
 
-The perch_content_custom tag is really useful if you want to reuse content from one page on another (for example showing 2 items from your news page on the homepage) it can also be used to create an anchor list for our FAQ page.
+The `perch_content_custom()` page function is really useful if you want to reuse content from one page on another (for example showing two items from your news page on the homepage) it can also be used to create an anchor list for our FAQ page.
 
 Above your FAQ list add the following code:
 
@@ -67,12 +67,12 @@ Then we call perch_content_custom passing in the ID of the area on the page our 
 
 In this case our options are quite simple:
 
-* template is set to faq_question.html, we will create this template next
-* page is set to /faq.php this is my FAQ page in my site
+* template is set to `faq_question.html`, we will create this template next
+* page is set to `/faq.php` this is my FAQ page in my site
 
-Now create a new template in the perch/templates/content directory with a single list item of the question. Wrap the question in a link.
+Now create a new template in the `perch/templates/content` directory with a single list item of the question. Wrap the question in a link.
 
-To create our anchors in the link we can use the perch_item_index tag, which will give you the unique index of that content item. This is ideal for creating our anchor links by adding the unique id onto the end of the word faq, creating an ID of faq1, faq2 and so on.
+To create our anchors in the link we can use the `perch_item_index` tag, which will give you the unique index of that content item. This is ideal for creating our anchor links by adding the unique id onto the end of the word faq, creating an ID of `faq1`, `faq2` and so on.
 
     <li>
       <a href="#faq<perch:content id="perch_item_index" type="hidden" />">
@@ -80,7 +80,7 @@ To create our anchors in the link we can use the perch_item_index tag, which wil
       </a>
     </li>
 
-Now open the initial faq.html template that you created and add an ID to the h2 element, the ID value will be the word faq plus the item index. The attribute type needs to have a value of hidden to stop this showing up as an editable field in the admin.
+Now open the initial `faq.html` template that you created and add an ID to the `h2` element, the ID value will be the word `faq` plus the item index. The attribute type needs to have a value of hidden to stop this showing up as an editable field in the admin.
 
     <li>
       <h2 id="faq<perch:content id="perch_item_index" type="hidden" />">
