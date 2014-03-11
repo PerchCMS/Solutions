@@ -19,6 +19,8 @@ For example, the following template will display one image upload field in admin
 * the second will be resized to a maximum 320x240
 * the third will be a 120x120 crop
 
+The template code would look like this:
+
     <img src="<perch:content id="main_image" type="image" label="Article image" width="640" height="480" />" alt="<perch:content id="alt" type="text" label="Alt text" />" />
     <perch:content id="main_image" type="image" label="Article image" width="320" height="240" suppress="true" />
     <perch:content id="main_image" type="image" label="Article image" width="120" height="120" suppress="true" />
