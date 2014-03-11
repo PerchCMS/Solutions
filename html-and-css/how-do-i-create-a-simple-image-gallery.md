@@ -1,3 +1,10 @@
+Created by: Drew McLellan
+Created date: 2012-05-31
+Last updated: 2014-03-11
+Authors: Drew McLellan, Rachel Andrew
+Title: How do I create an image gallery?
+Tags: images, multiple item regions
+
 # How do I create an image gallery?
 
 ## Perch has a feature complete Gallery app, however sometimes all you need is a basic listing of images that you can combine with a jQuery plugin to make a simple slideshow.

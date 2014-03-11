@@ -1,3 +1,10 @@
+Created by: Rachel Andrew
+Created date: 2012-05-31
+Last updated: 2014-03-11
+Authors: Rachel Andrew, Drew McLellan
+Title: How do I create a FAQ?
+Tags: perch_content_custom
+
 # How do I create a FAQ?
 
 ## An FAQ page often has a list of links at the top, skipping down to the answers below. This solution demonstrates how to create this in Perch.

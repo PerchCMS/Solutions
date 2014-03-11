@@ -1,3 +1,10 @@
+Created by: Rachel Andrew
+Created date: 2012-05-31
+Last updated: 2014-03-11
+Authors: Rachel Andrew, Drew McLellan
+Title: How do I create a config file that will work on multiple servers?
+Tags: XAMPP, local development, PHP
+
 # How do I create a config file that will work on multiple servers?
 
 ## If you have a local, staging and live version of your Perch site then every time you move your files you have to be careful not to overwrite the config file. This solution explains how to create a file that switches on the hostname, meaning that it is safe to upload to all of your locations.

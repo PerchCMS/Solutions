@@ -1,3 +1,10 @@
+Created by: Drew McLellan
+Created date: 2012-05-31
+Last updated: 2014-03-11
+Authors: Drew McLellan, Rachel Andrew
+Title: How do I use responsive images in Perch?
+Tags: images, RWD, picture element, srcset
+
 # How do I use responsive images in Perch
 
 ## If you are following responsive web design techniques then Perch can help you do so. This solution explains how.

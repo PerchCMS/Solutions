@@ -1,3 +1,10 @@
+Created by: Drew McLellan
+Created date: 2012-05-31
+Last updated: 2014-03-11
+Authors: Drew McLellan
+Title: How do I create a Google Sitemap?
+Tags: XAMPP, local development, PHP
+
 # How do I create a Google Sitemap
 
 ## Sitemaps are an easy way for webmasters to inform search engines about pages on their sites that are available for crawling. In its simplest form, a Sitemap is an XML file that lists URLs for a site along with additional metadata about each URL (when it was last updated, how often it usually changes, and how important it is, relative to other URLs in the site) so that search engines can more intelligently crawl the site.

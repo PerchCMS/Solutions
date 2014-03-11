@@ -1,3 +1,10 @@
+Created by: Rachel Andrew
+Created date: 2012-05-31
+Last updated: 2014-03-11
+Authors: Rachel Andrew, Drew McLellan
+Title: How do I get started with PHP?
+Tags: PHP
+
 # How do I get started with PHP?
 
 ## Perch doesn't require that you know PHP, but with just a little bit of knowledge you will find you can do far more advanced things. This solution gets you started.

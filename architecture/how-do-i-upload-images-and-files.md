@@ -1,3 +1,10 @@
+Created by: Rachel Andrew
+Created date: 2012-05-31
+Last updated: 2014-03-11
+Authors: Rachel Andrew, Drew McLellan
+Title: How do I let content editors add images and files?
+Tags: images, files
+
 # How do I let content editors add images and files?
 
 ## This solution details how to give your editors the ability to upload images and files in the Perch admin.
