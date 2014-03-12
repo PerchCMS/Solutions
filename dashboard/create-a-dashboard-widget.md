@@ -1,3 +1,10 @@
+Created by: Rachel Andrew
+Created date: 2014-03-11
+Last updated: 2014-03-11
+Authors: Rachel Andrew
+Title: How do I create a Dashboard Widget?
+Tags: dashboard, control panel
+
 # How do I create a Dashboard Widget?
 
 ## Dashboard Widgets display on the home screen of the admin area if you have enabled the Dashboard rather than the traditional listing of pages initial view. Widgets can be created as part of an app, as with our official Perch Apps. However you can also create a standalone widget, that can contain anything from some simple HTML to more complex PHP. This solution shows you how to enable a very simple Widget of your own.
