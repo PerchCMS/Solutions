@@ -2,10 +2,10 @@ Created by: Drew McLellan
 Created date: 2012-05-31
 Last updated: 2014-03-12
 Authors: Drew McLellan
-Title: Keeping track of traffic with Google Analytics
+Title: How can I keep track of traffic with Google Analytics?
 Tags: google analytics
 
-# Keeping track of traffic with Google Analytics
+# How can I keep track of traffic with Google Analytics?
 
 ## Google Analytics is a useful and powerful tool to help you keep track of activity on your website. Here's how you integrate the tracking code into Perch.
 

@@ -2,10 +2,10 @@ Created by: Drew McLellan
 Created date: 2012-05-31
 Last updated: 2014-03-12
 Authors: Drew McLellan
-Title: Adding Facebook Like buttons to a page
+Title: How can I add Facebook Like buttons to a page?
 Tags: facebook
 
-# Adding Facebook Like buttons to a page
+# How can I add Facebook Like buttons to a page?
 
 ## Integration with social media sites is an increasingly important tool for driving traffic to your site. This solution explains how to add Facebook 'Like' buttons to a page.
 
