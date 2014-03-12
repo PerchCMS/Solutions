@@ -2,10 +2,10 @@ Created by: Rachel Andrew
 Created date: 2014-03-11
 Last updated: 2014-03-11
 Authors: Rachel Andrew
-Title: How do I create a Field Type
+Title: How do I output opening and closing ul tags only if there is content in the Region?
 Tags: field types, templates
 
-# How do I output opening and closing ul tags only if there is content in the Region
+# How do I output opening and closing ul tags only if there is content in the Region?
 
 ## Some regions might contain markup that needs wrapping - for example if you are allowing your editors to add items marked up in an li, you will only want to display the opening `<ul>` and closing `</ul>` if they have entered at least one item.
 
