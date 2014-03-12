@@ -26,11 +26,9 @@ The first proposed markup pattern is the picture element. The sample markup look
 This uses source elements to serve images to browsers that understand the picture element, but falls back to a regular image tag for those that don’t. In Perch, you can have your client upload just one image and have the different formats automatically created for them. The template would look like this:
 
     <picture>
-      <source media="(min-width: 40em)" 
-  srcset="<perch:content id="img" type="image" width="1024" /> 1x, 
+      <source media="(min-width: 40em)" srcset="<perch:content id="img" type="image" width="1024" /> 1x, 
           <perch:content id="img" type="image" width="1024" density="2" /> 2x">
-      <source 
-  srcset="<perch:content id="img" type="image" width="640" /> 1x, 
+      <source srcset="<perch:content id="img" type="image" width="640" /> 1x, 
           <perch:content id="img" type="image" width="640" density="2" /> 2x">
       <img src="<perch:content id="img" type="image" label="Image" order="1" width="640" />" alt="">
     </picture>
@@ -47,15 +45,15 @@ You could, of course, use two different images if you wanted the editor to be ab
 
 The second proposed pattern uses a regular image tag, but adds a new srcset attribute. The sample markup looks like this:
 
-<img src="fallback.jpg" alt="" srcset="small.jpg 640w 1x, small-hd.jpg 640w 2x, med.jpg 1x, med-hd.jpg 2x ">
+    <img src="fallback.jpg" alt="" srcset="small.jpg 640w 1x, small-hd.jpg 640w 2x, med.jpg 1x, med-hd.jpg 2x ">
 
 Following the same process, your Perch template would look like this:
 
     <img src="<perch:content id="img" type="image" label="Image" order="1" width="640" />" alt="" 
-srcset="<perch:content id="img" type="image" width="640" /> 640w 1x, 
-	    <perch:content id="img" type="image" width="640" density="2" /> 640w 2x, 
-	    <perch:content id="img" type="image" width="1024" /> 1x, 
-    	<perch:content id="img" type="image" width="1024" density="2" /> 2x ">
+      srcset="<perch:content id="img" type="image" width="640" /> 640w 1x, 
+        <perch:content id="img" type="image" width="640" density="2" /> 640w 2x, 
+        <perch:content id="img" type="image" width="1024" /> 1x, 
+        <perch:content id="img" type="image" width="1024" density="2" /> 2x ">
 
 Again, don’t forget the alt in your own templates.
 
