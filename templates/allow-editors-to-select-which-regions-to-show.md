@@ -13,7 +13,7 @@ The first step is to add a checkbox to your template. This will enable your edit
 
     <perch:content id="showprofile" type="checkbox" label="Display on site" value="1" suppress="true" />
 
-The suppress="true" attribute ensures that this does not output a `1` to your site when checked.
+The `suppress="true"` attribute ensures that this does not output a `1` to your site when checked.
 
 We can now test to see if the value of show profile is 1 using `perch:if`.
 

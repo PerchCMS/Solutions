@@ -13,10 +13,8 @@ Dividers let you split up a complex template into sections, creating a divider b
 
 To use Template Dividers you can select a template tag that you want the Divider to display after and use the attribute `divider-before` with a value that will display as text in the bar.
 
-    <perch:content id="text" type="textarea" label="Text" textile="true" 
-editor="markitup" divider-before="Important information" />
+    <perch:content id="text" type="textarea" label="Text" textile="true" editor="markitup" divider-before="Important information" />
 
 Or you can use `divider-after` in the same way.
 
-    <perch:content id="text" type="textarea" label="Text" textile="true" 
-editor="markitup" divider-after="Related material" />
+    <perch:content id="text" type="textarea" label="Text" textile="true" editor="markitup" divider-after="Related material" />

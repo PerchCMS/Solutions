@@ -19,7 +19,6 @@ To add a block of help text at the top of an edit for use the perch:help tag.
 
 To add help next to a certain field use the help attribute on that field.
 
-    <perch:content type="text" id="heading" label="Heading" 
-  help="Give the article a descriptive title" />
+    <perch:content type="text" id="heading" label="Heading" help="Give the article a descriptive title" />
 
 Adding help text in this way can really aid in enforcing the content strategy for your site.
