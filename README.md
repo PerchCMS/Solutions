@@ -1,11 +1,12 @@
-Solutions
-=========
+
+
+# Solutions
 
 This repository contains the content for the solutions section of the Perch documentation. We would love to see contributions from Perchers, passing on tips you have discovered from working with Perch.
 
 ## How to contribute
 
-Anyone can contribute to the Solutions by Forking the Repository and making a Pull Request with your content. You can find information about how to do that on [Github](https://help.github.com/articles/fork-a-repo).
+Anyone can contribute to the Solutions by [forking the repository](http://github.com/PerchCMS/Solutions) and making a pull request with your content. You can find information about how to do that on [Github](https://help.github.com/articles/fork-a-repo).
 
 ## Suggesting an edit to an existing solution
 
