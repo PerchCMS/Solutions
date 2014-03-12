@@ -1,3 +1,10 @@
+Created by: Rachel Andrew
+Created date: 2014-03-11
+Last updated: 2014-03-11
+Authors: Rachel Andrew
+Title: My Site was built for me using Perch and I need help
+Tags: license, transfer
+
 # My Site was built for me using Perch and I need help
 
 ## This solution is for people who have had a site built for them by someone else using Perch, and who can't go back to that person for help for some reason.
