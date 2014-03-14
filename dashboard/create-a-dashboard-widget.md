@@ -77,8 +77,8 @@ I can now add some content. In this case all I am going to do is add the two lin
       <?php echo $Lang->get('My conferences'); ?>
       </h2>
       <div class="bd">
-	      <div class="lanyrd-target-splat"><a href="http://lanyrd.com/profile/rachelandrew/" 
-class="lanyrd-splat lanyrd-type-speaking lanyrd-context-future" rel="me">
+	<div class="lanyrd-target-splat"><a href="http://lanyrd.com/profile/rachelandrew/" 
+		class="lanyrd-splat lanyrd-type-speaking lanyrd-context-future" rel="me">
         See my conferences on Lanyrd</a></div>
 	      <script src="http://cdn.lanyrd.net/badges/person-v1.min.js"></script>	
       </div>
