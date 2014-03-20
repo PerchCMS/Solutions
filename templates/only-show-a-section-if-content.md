@@ -14,6 +14,8 @@ You can use the [perch:if](http://docs.grabaperch.com/docs/templates/conditional
      <perch:if exists="figure">
 		   <figure>
          <img src="<perch:content id="figure" type="image" label="Upload a figure" width="640" height="480"/>" alt="<perch:content id="alt" type="text" label="Alt text" />" />
-         <figcaption><perch:content id="caption" type="text" label="Figure caption" /></figcaption>
+         <perch:if exists="caption">
+         	<figcaption><perch:content id="caption" type="text" label="Figure caption" /></figcaption>
+       	  </perch:if>
        </figure>
-	   </perch:if>
+      </perch:if>
