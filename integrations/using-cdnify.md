@@ -7,7 +7,7 @@ Tags: cdn, resources, performance
 
 # Can I use CDNify with Perch?
 
-## Sites with internation audiences can see performance benefits from moving images and static assets to a content delivery network (CDN). CDNify is one such service which is very easy to add to a Perch site.
+## Sites with international audiences can see performance benefits from moving images and static assets to a content delivery network (CDN). CDNify is one such service which is very easy to add to a Perch site.
 
 The purpose of a content delivery network (CDN) is to make your site load faster by serving images and static assets from data centres that are physically closer to the site visitor. A CDN will automatically copy your assets to their data centres around the globe. When a visitor loads your site, they'll be sent assets from the closest data centre to their current location.
 
@@ -35,7 +35,7 @@ and update it to this:
 
     define('PERCH_RESPATH', 'http://mysite.a.cdnify.io' . PERCH_LOGINPATH . '/resources');
 
-That's it. The explaination was longer than the instructions!
+That's it. The explanation was longer than the instructions!
 
 ## Using with buckets
 
