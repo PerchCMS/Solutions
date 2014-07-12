@@ -8,17 +8,17 @@ Title: How do I create a video playlist with a description for each video?
 
 ## You want to create an editable playlist with a custom description for each video using jQuery. The video description should update when you click on a playlist item.
 
-Tools
+Tools:  
 - jQuery 1.10.2+
 - jQuery Responsive YouTube Vimeo Player  
 http://codecanyon.net/item/responsive-youtube-vimeo-playlist/4748903
 
-Live demo  
+Live demo:  
 http://www.thevisionhouse.com.au/gear-in-action
 
 ## Part 1: The video descriptions
 
-Create an empty container for a list of video descriptions. These will be populated by Perch and only one list item will be visible based on the current video that’s playing.
+Create an empty container for a list of video descriptions. These will be populated by Perch and only one list item will be visible based on the current video that’s playing. Default markup and css:
 
     <ul class="video-descriptions">
     	<?php perch_content('Videos'); ?>
@@ -32,7 +32,7 @@ Create an empty container for a list of video descriptions. These will be popula
     }
 
 Create a video_list.html template inside perch/templates/content.
-This is a repeater block which will allow the editor to add multiple videos and reorder them. The video-url is used to dynamically populate the playlist. It's not visible on the page.
+This is a repeater block which will allow the editor to add multiple videos and reorder them. The video-url is used to  populate the playlist. The links are not visible on the page as they're empty. No need for a `p` tag around the description content because Perch adds one.
 
 	<perch:repeater id="Videos" label="Videos">
 		<li>
@@ -49,7 +49,7 @@ This is a repeater block which will allow the editor to add multiple videos and 
 
 Dynamically build a playlist based on the video links entered in Perch.
 
-Video player markup
+Video player markup:
 
     <div id="rp_plugin">
     	<div id="rp_videoContainer">
@@ -60,7 +60,7 @@ Video player markup
     	</div>
     </div>
 
-Append ul to playlist container since an empty ul in the markup is invalid
+Append `ul` to playlist container since an empty `ul` in the markup is invalid
     
     $('#rp_playlistContainer').append('<ul id="rp_playlist" />');
 	
