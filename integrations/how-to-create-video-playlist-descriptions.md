@@ -79,7 +79,7 @@ For each empty playlist item, append the corresponding video link from the video
 		$(this).append(videoLinks[i]);
 	});
 
-Init video player (feel free to substitute your own. If yours doesn't have an onChange event, listen for a click on each playlist item instead).
+Init video player (feel free to substitute your own. If yours doesn't have an onChange event, listen for a click event on each playlist item instead).
 
 onChange: Wait until the player has updated the current video, then get the index of the current video and show its corresponding video description. Hide the other descriptions.
 	
@@ -87,8 +87,8 @@ onChange: Wait until the player has updated the current video, then get the inde
 		onChange: function(){
 	    		setTimeout(function(){
 	    			var currIndex = $('#rp_playlist li.rp_currentVideo').index();
-				$('.video-descriptions li:eq('+currIndex+')').show();
-				$('.video-descriptions li:eq('+currIndex+')').siblings().hide();
+					$('.video-descriptions li:eq('+currIndex+')').show();
+					$('.video-descriptions li:eq('+currIndex+')').siblings().hide();
 		    	},1000);
 		}
 	});
