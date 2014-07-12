@@ -32,7 +32,7 @@ Create an empty container for a list of video descriptions. These will be popula
     }
 
 Create a video_list.html template inside perch/templates/content.
-This is a repeater block which will allow the editor to add multiple videos and reorder them. The video-url is used to  populate the playlist. These links are not visible on the page as they're empty. No need for a `p` tag around the description content because Perch adds one.
+This is a repeater block which will allow the editor to add multiple videos and reorder them. The video-url is used to  populate the playlist. These links are not visible on the page as they're empty. No need for a `p` tag around the description content because this is added by [Textile formatting](http://docs.grabaperch.com/docs/templates/attributes/type/textarea/).
 
 	<perch:repeater id="Videos" label="Videos">
 		<li>
