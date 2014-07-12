@@ -18,11 +18,12 @@ http://www.thevisionhouse.com.au/gear-in-action
 
 ## Part 1: The video descriptions
 
-Create an empty container for a list of video descriptions. These will be populated by Perch and only one list item will be visible based on the current video that’s playing. A video-url is also added in Perch which is used to dynamically populate the playlist.
+Create an empty container for a list of video descriptions. These will be populated by Perch and only one list item will be visible based on the current video that’s playing.
 
     <ul class="video-descriptions">
     	<?php perch_content('Videos'); ?>
     </ul>
+    
     .video-descriptions li {
         display: none;
     }
@@ -31,17 +32,17 @@ Create an empty container for a list of video descriptions. These will be popula
     }
 
 Create a video_list.html template in perch/templates/content.
-This is a repeater block which will allow the editor to add multiple videos and reorder them.
+This is a repeater block which will allow the editor to add multiple videos and reorder them. The video-url is used to dynamically populate the playlist.
 
-<perch:repeater id="Videos" label="Videos">
-	<li>
-		<div>
-			<a class="video-url" href="<perch:content id="video-url" type="text" label="Video URL" required="true" />"></a>
-			<h3><perch:content id="video-title" type="text" label="Video Title" /></h3>
-			<perch:content id="video-description" type="textarea" label="Video Description" textile="true" markdown="true" html="true"  />
-		</div>
-	</li>
-</perch:repeater>
+	<perch:repeater id="Videos" label="Videos">
+		<li>
+			<div>
+				<a class="video-url" href="<perch:content id="video-url" type="text" label="Video URL" required="true" />"></a>
+				<h3><perch:content id="video-title" type="text" label="Video Title" /></h3>
+				<perch:content id="video-description" type="textarea" label="Video Description" textile="true" markdown="true" html="true"  />
+			</div>
+		</li>
+	</perch:repeater>
 
 
 ## Part 2: The video playlist
@@ -80,16 +81,16 @@ For each empty playlist item, append corresponding video link from videoLinks ar
 		$(this).append(videoLinks[i]);
 	});
 
-Init video player (feel free to substitute your own)
+Init video player (feel free to substitute your own. If yours doesn't have an onChange event, listen for a click on each playlist item instead).
+
+onChange: Wait until the player has updated the current video, then get the index of the current video and show its corresponding video description, and hide the others.
 	
 	$("#rp_playlist").responsiveplaylist({
-	    onChange: function(){
-	    	// wait until video has changed before getting index of current video
-	    	// show the corresponding video description
-	    	setTimeout(function(){
-	    		var currIndex = $('#rp_playlist li.rp_currentVideo').index();
+		onChange: function(){
+	    		setTimeout(function(){
+	    			var currIndex = $('#rp_playlist li.rp_currentVideo').index();
 				$('.video-descriptions li:eq('+currIndex+')').show();
 				$('.video-descriptions li:eq('+currIndex+')').siblings().hide();
-	    	},1000);
+		    	},1000);
 		}
 	});
