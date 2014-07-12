@@ -6,14 +6,14 @@ Title: How do I create a video playlist with a description for each video?
 
 # How do I create a video playlist with a description for each video?
 
-## You want to create an editable playlist with a custom description for each video using jQuery. The video description should update each time you click on a playlist item.
+## You want to create an editable playlist with a custom description for each video using jQuery. The video description should update when you click on a playlist item.
 
 Tools
 - jQuery 1.10.2+
-- jQuery Responsive YouTube Vimeo Player
+- jQuery Responsive YouTube Vimeo Player  
 http://codecanyon.net/item/responsive-youtube-vimeo-playlist/4748903
 
-Live demo
+Live demo  
 http://www.thevisionhouse.com.au/gear-in-action
 
 ## Part 1: The video descriptions
@@ -31,8 +31,8 @@ Create an empty container for a list of video descriptions. These will be popula
         display: block;
     }
 
-Create a video_list.html template in perch/templates/content.
-This is a repeater block which will allow the editor to add multiple videos and reorder them. The video-url is used to dynamically populate the playlist.
+Create a video_list.html template inside perch/templates/content.
+This is a repeater block which will allow the editor to add multiple videos and reorder them. The video-url is used to dynamically populate the playlist. It's not visible on the page.
 
 	<perch:repeater id="Videos" label="Videos">
 		<li>
