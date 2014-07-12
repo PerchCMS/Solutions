@@ -39,7 +39,7 @@ This is a repeater block which will allow the editor to add multiple videos and 
 			<div>
 				<a class="video-url" href="<perch:content id="video-url" type="text" label="Video URL" required="true" />"></a>
 				<h3><perch:content id="video-title" type="text" label="Video Title" /></h3>
-				<perch:content id="video-description" type="textarea" label="Video Description" textile="true" markdown="true" html="true"  />
+				<perch:content id="video-description" type="textarea" label="Video Description" textile="true" html="true"  />
 			</div>
 		</li>
 	</perch:repeater>
