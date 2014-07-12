@@ -10,7 +10,7 @@ Title: How do I create a video playlist with a description for each video?
 
 Tools:  
 - jQuery 1.10.2+
-- jQuery Responsive YouTube Vimeo Player 
+- jQuery Responsive YouTube Vimeo Player  
 http://codecanyon.net/item/responsive-youtube-vimeo-playlist/4748903
 
 Live demo:  
@@ -32,7 +32,7 @@ Create an empty container for a list of video descriptions. These will be popula
     }
 
 Create a video_list.html template inside perch/templates/content.
-This is a repeater block which will allow the editor to add multiple videos and reorder them. The video-url is used to  populate the playlist. The links are not visible on the page as they're empty. No need for a `p` tag around the description content because Perch adds one.
+This is a repeater block which will allow the editor to add multiple videos and reorder them. The video-url is used to  populate the playlist. These links are not visible on the page as they're empty. No need for a `p` tag around the description content because Perch adds one.
 
 	<perch:repeater id="Videos" label="Videos">
 		<li>
@@ -64,7 +64,7 @@ Append a `ul` to the playlist container since an empty `ul` in the markup is inv
     
 	$('#rp_playlistContainer').append('<ul id="rp_playlist" />');
 	
-For each video description item, get the video url and push it to a videoLinks array. Append an empty playlist item so there is an equal number of descriptions and videos.
+For each video description item, get the video url and push it to a videoLinks array. Append an empty playlist item so there is an equal number of descriptions and videos:
     
 	var videoLinks = [];
 	$('.video-descriptions li').each(function(){
