@@ -10,7 +10,7 @@ Title: How do I create a video playlist with a description for each video?
 
 Tools:  
 - jQuery 1.10.2+
-- jQuery Responsive YouTube Vimeo Player  
+- jQuery Responsive YouTube Vimeo Player 
 http://codecanyon.net/item/responsive-youtube-vimeo-playlist/4748903
 
 Live demo:  
@@ -60,22 +60,20 @@ Video player markup:
     	</div>
     </div>
 
-Append `ul` to playlist container since an empty `ul` in the markup is invalid
+Append a `ul` to the playlist container since an empty `ul` in the markup is invalid:
     
-    $('#rp_playlistContainer').append('<ul id="rp_playlist" />');
+	$('#rp_playlistContainer').append('<ul id="rp_playlist" />');
 	
-For each video description item, get the video url and push it to a videoLinks array
+For each video description item, get the video url and push it to a videoLinks array. Append an empty playlist item so there is an equal number of descriptions and videos.
     
-    var videoLinks = [];
+	var videoLinks = [];
 	$('.video-descriptions li').each(function(){
 		var videoUrl = $('.video-url',this);
 		videoLinks.push(videoUrl);
-		// for each video description item, create an empty playlist item
-		// so there is an equal number of descriptions and videos
 		$('#rp_playlist').append('<li />');
 	});
 
-For each empty playlist item, append corresponding video link from videoLinks array
+For each empty playlist item, append the corresponding video link from the videoLinks array:
 
 	$('#rp_playlist li').each(function(i){
 		$(this).append(videoLinks[i]);
@@ -83,7 +81,7 @@ For each empty playlist item, append corresponding video link from videoLinks ar
 
 Init video player (feel free to substitute your own. If yours doesn't have an onChange event, listen for a click on each playlist item instead).
 
-onChange: Wait until the player has updated the current video, then get the index of the current video and show its corresponding video description, and hide the others.
+onChange: Wait until the player has updated the current video, then get the index of the current video and show its corresponding video description. Hide the other descriptions.
 	
 	$("#rp_playlist").responsiveplaylist({
 		onChange: function(){
