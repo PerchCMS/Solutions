@@ -10,11 +10,9 @@ Title: How do I create a video playlist with a description for each video?
 
 Tools:  
 - jQuery 1.10.2+
-- jQuery Responsive YouTube Vimeo Player  
-http://codecanyon.net/item/responsive-youtube-vimeo-playlist/4748903
+- [jQuery Responsive YouTube Vimeo Player](http://codecanyon.net/item/responsive-youtube-vimeo-playlist/4748903)
 
-Live demo:  
-http://www.thevisionhouse.com.au/gear-in-action
+Live demo: http://www.thevisionhouse.com.au/gear-in-action
 
 ## Part 1: The video descriptions
 
@@ -31,8 +29,9 @@ Create an empty container for a list of video descriptions. These will be popula
         display: block;
     }
 
-Create a video_list.html template inside perch/templates/content.
-This is a repeater block which will allow the editor to add multiple videos and reorder them. The video-url is used to  populate the playlist. These links are not visible on the page as they're empty. No need for a `p` tag around the description content because this is added by [Textile formatting](http://docs.grabaperch.com/docs/templates/attributes/type/textarea/).
+Create a `video_list.html` template inside `perch/templates/content`.
+
+This is a repeater block which will allow the editor to add multiple videos and reorder them. The `video-url` is used to populate the playlist. These links are not visible on the page as they're empty. No need for a `p` tag around the description content because this is added by [Textile formatting](http://docs.grabaperch.com/docs/templates/attributes/type/textarea/).
 
 	<perch:repeater id="Videos" label="Videos">
 		<li>
@@ -64,7 +63,7 @@ Append a `ul` to the playlist container since an empty `ul` in the markup is inv
     
 	$('#rp_playlistContainer').append('<ul id="rp_playlist" />');
 	
-For each video description item, get the video url and push it to a videoLinks array. Append an empty playlist item so there is an equal number of descriptions and videos:
+For each video description item, get the video url and push it to a `videoLinks` array. Append an empty playlist item so there is an equal number of descriptions and videos:
     
 	var videoLinks = [];
 	$('.video-descriptions li').each(function(){
@@ -73,15 +72,15 @@ For each video description item, get the video url and push it to a videoLinks a
 		$('#rp_playlist').append('<li />');
 	});
 
-For each empty playlist item, append the corresponding video link from the videoLinks array:
+For each empty playlist item, append the corresponding video link from the `videoLink`s array:
 
 	$('#rp_playlist li').each(function(i){
 		$(this).append(videoLinks[i]);
 	});
 
-Init video player (feel free to substitute your own. If yours doesn't have an onChange event, listen for a click event on each playlist item instead).
+Init video player (feel free to substitute your own. If yours doesn't have an `onChange` event, listen for a click event on each playlist item instead).
 
-onChange: Wait until the player has updated the current video, then get the index of the current video and show its corresponding video description. Hide the other descriptions.
+`onChange`: Wait until the player has updated the current video, then get the index of the current video and show its corresponding video description. Hide the other descriptions.
 	
 	$("#rp_playlist").responsiveplaylist({
 		onChange: function(){
