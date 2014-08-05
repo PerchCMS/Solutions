@@ -7,6 +7,8 @@ Tags: images, RWD, picture element, srcset
 
 # How do I use responsive images in Perch?
 
+## You would like to ensure that as browsers begin to support the new picture element that your site takes advantage of it.
+
 The _picture_ element, a method for using true responsive images on the web, is now making it's way into browsers. Perch makes it easy to use this new element in your designs so that as browsers start to add support your site will allow visitors to benefit.
 
 ## First steps to responsive images
