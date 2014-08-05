@@ -160,7 +160,7 @@ The fantastic thing about this is that your content editor just has to upload or
 
 ### Perch template
 
-<picture>
+    <picture>
 	<source
 		media="(min-width: 1280px)"
 		sizes="50vw"
