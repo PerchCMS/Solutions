@@ -101,7 +101,7 @@ The [recipe](https://support.google.com/webmasters/answer/173379) rich snippet i
     <div vocab="http://schema.org/" typeof="Recipe">
       <h1 property="name"><perch:content id="title" type="text" label="Recipe title" required="true" /></h1>
       <p>By <span property="author"><perch:content id="author" type="text" label="Author" required="true" /></span>,
-  <meta property="datePublished" content="<perch:content id="date" type="date" label="Published date" format="Y-m-d" />"><perch:content id="date" type="date" label="Published date" format="F j, Y" /></p>
+      <meta property="datePublished" content="<perch:content id="date" type="date" label="Published date" format="Y-m-d" />"><perch:content id="date" type="date" label="Published date" format="F j, Y" /></p>
       <img property="image" src="<perch:content type="image" label="Image" id="Image" width="800" />" alt="<perch:content id="alt" type="text" label="Image description" />" />
       <div property="description"><perch:content id="description" type="textarea" label="Description" size="s" markdown="true" editor="markitup" required="true" /></div>
       <p>Prep Time: <meta property="prepTime" content="PT<perch:content id="preptime" type="text" label="Prep time" required="true" help="Add the preparation time as a number in minutes" size="s" />M" /><perch:content id="preptime" type="text" label="Prep time" /> minutes
