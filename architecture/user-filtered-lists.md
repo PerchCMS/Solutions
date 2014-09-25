@@ -29,12 +29,12 @@ This lists all our properties, most expensive to least expensive.
 
 The first thing to do is create a form on the page for the user to make their selections.
 
-Install the Forms app if you haven't already, as this gives us access to the handy `perch_forms()` function for displaying forms without needing a content region.
+Install the Forms app if you haven't already, as this gives us access to the handy `perch_form()` function for displaying forms without needing a content region.
 
 In your page:
 
 ~~~
-perch_forms('property_filter.html');
+perch_form('property_filter.html');
 ~~~
 
 Then create a new file at `perch/templates/forms/property_filter.html` and start building up your form.

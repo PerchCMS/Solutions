@@ -34,7 +34,7 @@ Your login details to the CMS on your hosting, and to your Perch account on our 
 Our contract is with the person who bought the license. If they are happy to transfer that to you then follow these steps.
 
 1. Create a new account by going through the first step of the [Buy process](https://grabaperch.com/buy) on the Perch site – just don’t actually pay for a new license.
-2. Ask the person who bought the license to [raise a new support ticket](http://support.grabaperch.com/index.php?pg=request) with a category of license transfer request, they need to tell us the email address of your new account and the license key to transfer.
+2. Ask the person who bought the license to [raise a new support ticket](http://support.grabaperch.com) with a category of license transfer request, they need to tell us the email address of your new account and the license key to transfer.
 3. We will then transfer the license to your account
 
 We cannot transfer a license without the contact from the person who bought it.
