@@ -15,7 +15,7 @@ Create your [mailtrap](https://mailtrap.io) account. You can sign up for a free 
 
 Once you have created your account click on the Inbox that has been created. To integrate Mailtrap with Perch you’ll need the Host, Username and Password listed under SMTP.
 
-Open your Perch config/config.php in a text editor and add the following details, replacing `mailtrap_host`, `mailtrap_username` and `mailtrap_password` with your settings.
+Open your Perch `config/config.php` in a text editor and add the following details, replacing `mailtrap_host`, `mailtrap_username` and `mailtrap_password` with your settings.
 
     define('PERCH_EMAIL_METHOD', 'smtp');
     define('PERCH_EMAIL_HOST', 'mailtrap_host');
@@ -29,7 +29,9 @@ You can test to see if your integration is working by going to - Settings > Emai
 
 Now any email that Perch sends will show up in Mailtrap making it easier to test your forms.
 
-Mailtrap is also a good way to test that email is leaving your server, and to check for other deliverability issues. If you think Perch is not sending emails, switching to using Mailtrap’s SMTP server will ensure that all mail is delivered directly to Mailtrap. If Mailtrap gets the email then you should be able to set up another SMTP server - using the Google SMTP settings for example - in it’s place. Once you have received an email in Mailtrap you can click on it, see the contents and also check it for common deliverability issues by clicking the Analysis tab. Most reported email issues in Perch support are nothing to do with Perch or PHP sending email - the email is being sent but is getting caught by filters after leaving your server,
+Mailtrap is also a good way to test that email is leaving your server, and to check for other deliverability issues. If you think Perch is not sending emails, switching to using Mailtrap’s SMTP server will ensure that all mail is delivered directly to Mailtrap. If Mailtrap gets the email then you should be able to set up another SMTP server - using the Google SMTP settings for example - in its place. 
+
+Once you have received an email in Mailtrap you can click on it, see the contents and also check it for common deliverability issues by clicking the Analysis tab. Most reported email issues in Perch support are nothing to do with Perch or PHP sending email - the email is being sent but is getting caught by filters after leaving your server,
 
 When you go live, you will need to remember to change those details for your live mail server details, or just remove them if PHP can send mail from your server without additional configuration. You could also add the details to a block in your config file following this solution for [creating Config Files that work on multiple servers](/development/multiple-server-config).
 
