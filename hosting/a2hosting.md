@@ -19,7 +19,7 @@ When registering you’ll be asked if you have an existing domain or want to reg
 
 You can choose to have your site hosted on a server in the USA or Europe (actually Iceland). Choose the location nearest to where the majority of your traffic will come from for the best speeds.
 
-[Sign up with A2 Hosting](http://a2hosting.com/perch-hosting)
+[Sign up with A2 Hosting](https://partners.a2hosting.com/solutions.php?id=5615&url=602)
 
 ### Hosting Options
 
