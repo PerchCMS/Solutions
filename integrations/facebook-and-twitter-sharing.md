@@ -30,7 +30,7 @@ I then link these into the default.html template.
 
 The contents of this template is as follows:
 
-    <meta property="og:site_name" content="<perch:pages id=“sitename” type="hidden" />" />
+    <meta property="og:site_name" content="<perch:pages id="sitename" type="hidden" />" />
     <meta property="og:url" content="<perch:pages id="url" type="hidden" />" />
     <meta property="og:title" content="<perch:pages id="og_title" label="Social title" type="text" escape="true" help="Title for this document with no branding or site name" divider-before="Facebook Open Graph Tags" />" />
     <meta property="og:description" content="<perch:pages id="og_description" label="Social description" type="textarea" size="s" escape="true" />" />
@@ -65,7 +65,7 @@ Others have been set to `type="hidden"` because I am going to pass the informati
 My twitter.html template contains the following tags.
 
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="<perch:pages id=“twittername” type="hidden" />" />
+    <meta name="twitter:site" content="<perch:pages id="twittername" type="hidden" />" />
     <meta name="twitter:title" content="<perch:pages id="og_title" label="Social title" type="text" escape="true" help="Title for this document with no branding or site name" />" />
     <meta name="twitter:description" content="<perch:pages id="og_description" label="Social description" type="textarea" size="s" escape="true" />" />
     <perch:if exists="og_image">
@@ -88,10 +88,10 @@ In a Perch Layout (or just on each page if you are not using layouts) you can se
 Finally I call in my default.html template, which includes my Facebook and Twitter templates. The below code should go in-between the `<head></head>` tags in your page or layout.
 
     <?php 
-    $domain = 'http://'.$_SERVER["HTTP_HOST"];
-    $url = $domain.$_SERVER["REQUEST_URI"];
-    $sitename = "The name of my website";
-    $twittername = "@mytwittername";
+    $domain        = 'http://'.$_SERVER["HTTP_HOST"];
+    $url           = $domain.$_SERVER["REQUEST_URI"];
+    $sitename      = "The name of my website";
+    $twittername   = "@mytwittername";
     $sharing_image = '/images/default_fb_image.jpg';
     
     PerchSystem::set_var('domain',$domain);
@@ -112,7 +112,7 @@ If you are using the Twitter tags you should [validate your card on Twitter](htt
 
 ### Pushing blog or other app content into Page Attributes
 
-The above all works well for regular page content, and you can now make sure that each page has the meta information added. However for app content such as blog, or any List/Detail type display of content you may have a single “page” that actually holds the content for 100s of articles.
+The above all works well for regular page content, and you can now make sure that each page has the meta information added. However for app content such as blog, or any List/Detail type display of content you may have a single "page" that actually holds the content for 100s of articles.
 
 In Perch 2.7.4 the `perch_page_attributes_extend` function accepts an array of data that will essentially overwrite anything that has been set for the attributes named. Use the function before your layout, or wherever you include your attributes template.
 
@@ -125,18 +125,18 @@ I have added a field to my blog template with an ID of fbimage specifically so t
     <?php
     # get the post
     $post = perch_blog_custom(array(
-		  'filter'=>'postSlug',
-		  'match'=>'eq',
-		  'value'=>perch_get('s'),
-		  'skip-template'=>'true',
-		  'return-html'=>'true',
+          'filter'        => 'postSlug',
+          'match'         => 'eq',
+          'value'         => perch_get('s'),
+          'skip-template' => 'true',
+          'return-html'   => 'true',
 	  ));
     
     # set up the variables
-    $title = $post['0']['postTitle'];
+    $title       = $post['0']['postTitle'];
     $description = strip_tags($post['0']['excerpt']);
-    $url = $post[0]['postURL'];
-    if($post[0]['fbimage']) {
+    $url         = $post[0]['postURL'];
+    if (isset($post[0]['fbimage'])) {
 	    $fbimage = $post[0]['fbimage'];
     } else {
 	    $fbimage = '';
@@ -144,12 +144,12 @@ I have added a field to my blog template with an ID of fbimage specifically so t
    
     # use the variables in the array value 
     perch_page_attributes_extend(array(
-	    'description'=>$description,
-	    'og_description'=>$description,
-	    'og_title'=>$title,
-	    'og_type'=>'article',
-	    'og_image'=>$fbimage,
-	    'og_author'=>'https://www.facebook.com/myfbname',
+        'description'    => $description,
+        'og_description' => $description,
+        'og_title'       => $title,
+        'og_type'        => 'article',
+        'og_image'       => $fbimage,
+        'og_author'      => 'https://www.facebook.com/myfbname',
     ));
     ?>
 
