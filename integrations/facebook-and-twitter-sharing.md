@@ -135,7 +135,6 @@ I have added a field to my blog template with an ID of fbimage specifically so t
     # set up the variables
     $title       = $post['0']['postTitle'];
     $description = strip_tags($post['0']['excerpt']);
-    $url         = $post[0]['postURL'];
     if (isset($post[0]['fbimage'])) {
 	    $fbimage = $post[0]['fbimage'];
     } else {
@@ -148,7 +147,7 @@ I have added a field to my blog template with an ID of fbimage specifically so t
         'og_description' => $description,
         'og_title'       => $title,
         'og_type'        => 'article',
-        'og_image'       => $fbimage,
+        'sharing_image'  => $fbimage,
         'og_author'      => 'https://www.facebook.com/myfbname',
     ));
     ?>
