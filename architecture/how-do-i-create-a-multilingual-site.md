@@ -37,23 +37,32 @@ So how do we set $lang to be our language choice? Add this snippet to the top of
 
     <?php
     session_start();
-    if (isset($_GET['lang']) && $_GET['lang']!='') {
-        $lang = $_GET['lang'];
-        $_SESSION['lang'] = $lang;
-    }elseif (isset($_SESSION['lang'])){
-        $lang = $_SESSION['lang'];
-    }else{
-        // default language
-        $lang = 'en';
+    $lang = 'en'; // default lang
+    switch(perch_get('lang')) {
+        case 'en':
+            $lang = 'en';
+            break;
+        case 'de':
+            $lang = 'de';
+            break;
+        // add more cases for language options here...
+        
+        default: 
+            if (isset($_SESSION['lang'])) {
+                $lang = $_SESSION['lang'];
+            }
+            break;
     }
-?>
+    $_SESSION['lang'] = $lang;
+    ?>
 
-The first thing to know is that we’re setting the default language to en – so if no other choice is made, the site will be in English. You can change that where commented at the bottom of the snippet.
+The first thing to know is that we’re setting the default language to en – so if no other choice is made, the site will be in English. You can change that where commented at the top of the snippet.
 
 The logic of the code goes like this:
 
-* Is there a lang option set on the URL? If so, use that, and store it in the session for next time.
-* If not, is there a lang option stored in the user’s session? If so, use that. Otherwise, use English.
+* Is there a lang option set on the URL? If so, use that.
+* If not, is there a lang option stored in the user’s session? If so, use that.
+* Store the choice in the session for next time.
 
 To switch language, you just need to make a link on your page such as:
 
