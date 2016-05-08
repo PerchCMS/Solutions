@@ -13,7 +13,7 @@ This solution explains why we ask the questions we do and gives some suggestions
 
 ## Can you help yourself?
 
-The quickest way to solve most problems is if you can find an answer in the documentation or related materials. The [Perch 2 documentation](http://docs.grabaperch.com/) is designed to be easy to search – you should find documentation, videos and worked examples in some cases.
+The quickest way to solve most problems is if you can find an answer in the documentation or related materials. The [Perch 2 documentation](https://docs.grabaperch.com/) is designed to be easy to search – you should find documentation, videos and worked examples in some cases.
 
 We have started to add troubleshooting sections to some of the docs. This is where we will add issues that we know people sometimes run into.
 
@@ -21,7 +21,7 @@ Another place to search is the forum, as someone else may have already had and s
 
 ## Still stuck? Where should you post?
 
-If you don’t find your answer in the docs, then post to either the [forum](http://support.grabaperch.com/index.php?pg=forums) or raise a [ticket](http://support.grabaperch.com/). If you have an install/upgrade issue or something is broken on your live site then raise a support ticket.
+If you don’t find your answer in the docs, then post to the [forum](http://forum.grabaperch.com/forum). If you have an install/upgrade issue or something is broken on your live site then raise a support ticket.
 
 If you have a question about how to do something, then the forum is the place to post.
 
